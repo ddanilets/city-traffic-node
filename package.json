@@ -1,0 +1,43 @@
+{
+  "name": "city-traffic-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddanilets/city-traffic-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddanilets/city-traffic-node/issues"
+  },
+  "homepage": "https://github.com/ddanilets/city-traffic-node#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "@babel/plugin-transform-strict-mode": "^7.0.0-beta.49",
+    "@babel/register": "^7.0.0-beta.44",
+    "@babel/cli": "^7.0.0-beta.44",
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.44",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0-beta.44",
+    "@babel/plugin-proposal-function-bind": "^7.0.0-beta.44",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.44",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.44",
+    "@babel/plugin-transform-object-assign": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "@babel/preset-react": "^7.0.0-beta.44",
+    "@babel/preset-stage-2": "^7.0.0-beta.44",
+    "babel-eslint": "8.2.2",
+    "babel-loader": "^8.0.0-beta.2",
+    "babel-plugin-es6-promise": "1.1.1",
+    "babel-plugin-lodash": "^3.3.2",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0"
+  }
+}
