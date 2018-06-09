@@ -1,4 +1,5 @@
 import City from '../models/City';
+import Block from '../models/Block';
 
 export default class CityController {
   setCity(city) {
@@ -8,5 +9,9 @@ export default class CityController {
   
   getCity() {
     return this.city;
+  }
+  
+  getBlocks() {
+    return new Block(this.city).parseCity();
   }
 }

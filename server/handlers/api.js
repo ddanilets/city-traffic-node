@@ -15,7 +15,7 @@ router.get('/info', (req, res) => {
 router.post('/city', (req, res) => {
   const controller = new CityController();
   controller.setCity(req.body);
-  res.send(controller.getCity());
+  res.send(controller.getBlocks());
 });
 
 export default router;

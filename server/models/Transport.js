@@ -5,7 +5,7 @@ export default class Transport {
   }
 }
 
-const capacityTable = {
+export const capacityTable = {
   bus: 25,
   trolley: 50,
   minibus: 12,
