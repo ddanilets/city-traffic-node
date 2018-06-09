@@ -84,8 +84,17 @@ export default class Block {
       block.color = mapBlockToColor(block);
     });
 
-    return this.blocks.map((el) => {
+    this.blocks = this.blocks.map((el) => {
       return {...el, routes: undefined};
+    });
+  }
+
+  prepareResponse() {
+    return this.blocks.map((block) => {
+      return {
+        color: block.color,
+        sides: getSidesObject(block.sides),
+      };
     });
   }
 
@@ -153,4 +162,20 @@ function mapBlockToColor(block) {
     return 2;
   }
   return 3;
+}
+
+function getSidesObject(sides) {
+  return {
+    left: getColor(sides[0]),
+    top: getColor(sides[1]),
+    right: getColor(sides[2]),
+    bottom: getColor(sides[3]),
+  }
+}
+
+function getColor(side) {
+  if (side && side.route && side.route.color) {
+    return side.route.color;
+  }
+  return 1;
 }

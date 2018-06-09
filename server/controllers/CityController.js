@@ -12,6 +12,9 @@ export default class CityController {
   }
   
   getBlocks() {
-    return new Block(this.city).parseCity();
+    const block = new Block(this.city);
+    block.parseCity();
+    return block.prepareResponse();
+
   }
 }
