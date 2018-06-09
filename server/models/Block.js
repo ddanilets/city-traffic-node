@@ -62,7 +62,7 @@ export default class Block {
           if (mappedRoute.includes(`(${side.xStart},${side.yStart}),(${side.xEnd},${side.yEnd})`) ||
             mappedRoute.includes(`(${side.xStart},${side.yEnd}),(${side.xEnd},${side.yStart})`) ||
             mappedRoute.includes(`(${side.xEnd},${side.yStart}),(${side.xStart},${side.yEnd})`)) {
-            if (side.route && Array.isArray(side.route.route)) {
+            if (side.route && Array.isArray(side.route.vehicles)) {
               side.route.vehicles.push(route.transport.type)
             } else {
               side.route = {
@@ -94,6 +94,7 @@ export default class Block {
       return {
         color: block.color,
         sides: getSidesObject(block.sides),
+        key: block.key,
       };
     });
   }
